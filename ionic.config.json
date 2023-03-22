@@ -1,0 +1,7 @@
+{
+  "name": "crystalShelfApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
