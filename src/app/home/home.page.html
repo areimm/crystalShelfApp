@@ -1,0 +1,49 @@
+<ion-header>
+<ion-toolbar>
+    <ion-searchbar slot="" animated="true" color="light" placeholder="Search in shelf.."></ion-searchbar>
+    <ion-icon slot="end" name="document-text-outline"></ion-icon>
+    <ion-icon slot="end" name="chatbubble-ellipses-outline"></ion-icon>
+    <ion-icon slot="end" name="notifications-outline"></ion-icon>
+    <ion-icon slot="end" name="person-outline"></ion-icon>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+  <ion-row> 
+    <ion-col  size="3" *ngFor="let item of cardinfos">
+      <ion-card>
+        <ion-card-content>
+          <div class="card-container">
+          <ion-icon name="{{item.icon}}">
+          </ion-icon>
+          <ion-card-subtitle>{{item.value}}</ion-card-subtitle>
+          <ion-card-title>{{item.title}}</ion-card-title>
+        </div>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <div id="tdable" class="table_">
+      <table>
+        <thead>
+          <th>Ingredients</th>
+          <th>Quantity</th>
+          <th>Number</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let shelf of shelves" tappable>
+            <td>adsdasdas</td>
+            <td>fasfasfas</td>
+            <td>qwölemlşweq</td>
+          </tr>
+        </tbody>
+      </table>
+      <ion-progress-bar *ngIf="!loaded" buffer="1" type="indeterminate"></ion-progress-bar>
+    </div>
+    
+  </ion-row>
+</ion-grid>
+
+</ion-content>
